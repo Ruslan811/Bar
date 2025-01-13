@@ -1,4 +1,4 @@
-using UnityEngine;
+п»їusing UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
@@ -42,14 +42,14 @@ public class GuideHand : MonoBehaviour
             return;
         }
 
-        // Создаем экземпляр руки как дочерний объект кнопки
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         handInstance = Instantiate(handPrefab, button.transform);
         RectTransform handRect = handInstance.GetComponent<RectTransform>();
         RectTransform buttonRect = button.GetComponent<RectTransform>();
 
         if (handRect != null && buttonRect != null)
         {
-            handRect.localPosition = handOffset; // Локальная позиция относительно центра кнопки
+            handRect.localPosition = handOffset; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
             AnimateHand(handRect);
         }
         else
@@ -57,7 +57,7 @@ public class GuideHand : MonoBehaviour
             Debug.LogError("GuideHand: RectTransform missing on handPrefab or button.");
         }
 
-        // Создаем текст рядом с кнопкой
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         textInstance = Instantiate(textPrefab.gameObject, button.transform.parent);
         RectTransform textRect = textInstance.GetComponent<RectTransform>();
         if (textRect != null && buttonRect != null)

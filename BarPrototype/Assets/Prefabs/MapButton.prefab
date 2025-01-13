@@ -153,7 +153,7 @@ MonoBehaviour:
   handPrefab: {fileID: 2748686804217814139, guid: dcd09ecc1b5ded54897dbba1e78bc18d, type: 3}
   textPrefab: {fileID: 2906518035530175874, guid: 9852c33b163bcbb4cb49bd013e5a1b56, type: 3}
   handOffset: {x: 0, y: 0, z: 0}
-  textOffset: {x: 0, y: 100, z: 0}
+  textOffset: {x: 0, y: 0.5, z: 0}
   animationDuration: 1
   animationDistance: 40
   guideText: Go to map

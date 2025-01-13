@@ -2988,8 +2988,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handPrefab: {fileID: 2748686804217814139, guid: dcd09ecc1b5ded54897dbba1e78bc18d, type: 3}
   textPrefab: {fileID: 2906518035530175874, guid: 9852c33b163bcbb4cb49bd013e5a1b56, type: 3}
-  handOffset: {x: 0, y: -0.3, z: 0}
-  textOffset: {x: 0.3, y: -93, z: 0}
+  handOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0.5, z: 0}
   animationDuration: 0.5
   animationDistance: 100
   guideText: Open Resipe!
@@ -3615,8 +3615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handPrefab: {fileID: 2748686804217814139, guid: dcd09ecc1b5ded54897dbba1e78bc18d, type: 3}
   textPrefab: {fileID: 2906518035530175874, guid: 9852c33b163bcbb4cb49bd013e5a1b56, type: 3}
-  handOffset: {x: 0, y: -0.3, z: 0}
-  textOffset: {x: 0, y: -93, z: 0}
+  handOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0.5, z: 0}
   animationDuration: 0.5
   animationDistance: 100
   guideText: Open profile!
@@ -3844,22 +3844,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5181558326578732518, guid: b3d900d6f180f42459042231ebf6612f, type: 3}
-      propertyPath: handOffset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5181558326578732518, guid: b3d900d6f180f42459042231ebf6612f, type: 3}
-      propertyPath: handOffset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5181558326578732518, guid: b3d900d6f180f42459042231ebf6612f, type: 3}
-      propertyPath: textOffset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5181558326578732518, guid: b3d900d6f180f42459042231ebf6612f, type: 3}
-      propertyPath: animationDistance
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3990,10 +3974,6 @@ PrefabInstance:
     - target: {fileID: 7023707247716590111, guid: 63d762a61604b554c9337e8f69e77001, type: 3}
       propertyPath: textOffset.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023707247716590111, guid: 63d762a61604b554c9337e8f69e77001, type: 3}
-      propertyPath: animationDistance
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4435,7 +4415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2558793722811202145, guid: 288394962fc9c634fb9b878d5346f35a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 139.11232
+      value: 139.11229
       objectReference: {fileID: 0}
     - target: {fileID: 2603146777515741996, guid: 288394962fc9c634fb9b878d5346f35a, type: 3}
       propertyPath: m_IsActive
