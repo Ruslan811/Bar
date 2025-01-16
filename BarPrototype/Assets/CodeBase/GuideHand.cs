@@ -6,9 +6,7 @@ using DG.Tweening;
 public class GuideHand : MonoBehaviour
 {
     [SerializeField] private GameObject handPrefab;
-    [SerializeField] private TMP_Text textPrefab;
     [SerializeField] private Vector3 handOffset = new Vector3(0, 0, 0);
-    [SerializeField] private Vector3 textOffset = new Vector3(0, 100, 0);
     [SerializeField] private float animationDuration = 1f;
     [SerializeField] private float animationDistance = 20f;
     [SerializeField] private string guideText = "Click here!";
@@ -36,11 +34,7 @@ public class GuideHand : MonoBehaviour
 
     private void SpawnHandAndText(Button button)
     {
-        if (handPrefab == null || textPrefab == null)
-        {
-            Debug.LogError("GuideHand: Hand or text prefab is not assigned.");
-            return;
-        }
+       
 
         // ������� ��������� ���� ��� �������� ������ ������
         handInstance = Instantiate(handPrefab, button.transform);
@@ -57,24 +51,7 @@ public class GuideHand : MonoBehaviour
             Debug.LogError("GuideHand: RectTransform missing on handPrefab or button.");
         }
 
-        // ������� ����� ����� � �������
-        textInstance = Instantiate(textPrefab.gameObject, button.transform.parent);
-        RectTransform textRect = textInstance.GetComponent<RectTransform>();
-        if (textRect != null && buttonRect != null)
-        {
-            Vector3 textPosition = buttonRect.position + textOffset;
-            textRect.position = textPosition;
-
-            TextMeshProUGUI textComponent = textInstance.GetComponent<TextMeshProUGUI>();
-            if (textComponent != null)
-            {
-                textComponent.text = guideText;
-            }
-        }
-        else
-        {
-            Debug.LogError("GuideHand: RectTransform missing on textPrefab.");
-        }
+      
 
         button.onClick.AddListener(() => OnButtonClicked(button));
     }
